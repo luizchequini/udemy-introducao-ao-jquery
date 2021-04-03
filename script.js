@@ -1,17 +1,17 @@
 $().ready(function(){
 
-    $(".aqua").addClass("mb50");
-    $(".aqua").removeClass("mb50");
-    $("div").addClass("mb50");
- 
-    let blue = $(".blue");
-    blue.removeClass("blue");
+    $("button").click(function(evento){
+        console.log(evento.target);
+        console.log(evento.target.id);
+    });
 
-    blue.toggleClass("blue");
+    $("input").keydown(function(evento){
+        console.log(evento.which);
+    });
 
-    $(".navy").css("background-color", "rgb(128,0,0)");
+    $("#inputChangePass").click(function(evento){
+        let inputPassword = $("input")[0];
 
-    $("div").css("height", "150px");
-
-    $("div").css("margin-bottom", "10px");
+        inputPassword.type = inputPassword.type == "text" ? "password" : "text";
+    });
 });

@@ -1,17 +1,24 @@
 $().ready(function(){
 
-    $("button").click(function(evento){
-        console.log(evento.target);
-        console.log(evento.target.id);
-    });
+    $("div").hide();
 
-    $("input").keydown(function(evento){
-        console.log(evento.which);
-    });
+    $("div").show(1000);
 
-    $("#inputChangePass").click(function(evento){
-        let inputPassword = $("input")[0];
+    $("div").slideToggle(1000);
 
-        inputPassword.type = inputPassword.type == "text" ? "password" : "text";
-    });
+    $("div").slideToggle(1000);
+
+    $("div").fadeOut(1000);
+
+    $("div").fadeIn(2000);
+
+    $("div").animate({height: "250px"}, 1000);
+
+    $("div").animate({height: "150px", marginLeft: "150px"}, 1000);
+
+    $("div").animate({height: "150px", marginLeft: "0px"}, 1000);
+
+    $("div").animate({height: "300px", marginLeft: "90%"}, 1000);
+
+    $("div").animate({height: "150px", marginLeft: "0px"}, 1000);
 });

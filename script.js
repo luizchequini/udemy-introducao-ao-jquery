@@ -1,13 +1,17 @@
 $().ready(function(){
 
-     let umaDIv = $("div");
-     let umParagrafo = $("<p>Olá mundo</p>")
+    $(".aqua").addClass("mb50");
+    $(".aqua").removeClass("mb50");
+    $("div").addClass("mb50");
+ 
+    let blue = $(".blue");
+    blue.removeClass("blue");
 
-    umaDIv.append(umParagrafo);
+    blue.toggleClass("blue");
 
-    $("<p>123 Luiz Chequini 1234</p>").prependTo(umaDIv);
+    $(".navy").css("background-color", "rgb(128,0,0)");
 
-    $("p").html("<strong>Negrito</strong> Trocando");
+    $("div").css("height", "150px");
 
-    $("p").text("Vamos ver isto");
+    $("div").css("margin-bottom", "10px");
 });
